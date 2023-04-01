@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FUTA || RESULTS</title>
+    
+    <style>
+        body { 
+            background: #0066ff;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        * { box-sizing: border-box}
+        
+        .logo { 
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+        .logo img { 
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            display: block;
+        }
+        .form_container { 
+            width: 80%;
+            
+        }
+        .input_container { 
+            background: white;
+            padding: 40px 20px;
+            
+        }
+        input { 
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid grey;
+            border-left: 2px solid lightblue;
+        }
+        .warning { 
+            background-color: #dff0d8;
+            color: #468847;
+            padding: 5px;
+        }
+        button { 
+            transform: translateX(180px);
+            margin: 30px 0;
+            background: #4d90fe;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+        .joke { 
+            color: white;
+            display: none;
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form_container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/FUTA_Seal.jpg" alt="FUTA">
+            <span>FUTA FIRARS | RESULT CHECKER</span>
+        </div>
+        <div class="input_container">
+            <input type="text" placeholder="Matric Number">
+            <input type="text" placeholder="Surname">
+            <div class="warning">
+                <p>Your Login details will not be saved. To access your results again, you will need to sign in again</p>
+            </div>
+            <button onclick="showJoke()" type="submit">Log In</button>
+        </div>
+        <div class="joke">
+            <span>Happy April Fools!!!</span>
+            <p style="font-size: 16px">Sssshh! Go back to the group chat and pretend this is real. Let's fool as many people as we can!</p>
+        </div>
+    </div>
+
+<script>
+    function showJoke() { 
+        document.querySelector('.input_container').style.display = "none" 
+        document.querySelector('.joke').style.display = "block";
+    }
+</script>
+</body>
+
+</html>
